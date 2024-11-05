@@ -52,3 +52,29 @@ undefined-->Nan
 undefined to String
 undefined-->"undefined"
 */
+
+let number=0
+let bool_num=Boolean(number)
+console.log(bool_num)
+number=-2
+bool_num=Boolean(number)
+console.log(bool_num)
+
+let string=""
+bool_num=Boolean(string)
+console.log(bool_num)
+string="abc"
+bool_num=Boolean(string)
+console.log(bool_num)
+
+/*
+Number to Boolean
+0-->false
+1,2,3...->true
+-1,-2,-3...->false
+String to Boolean
+""-->false
+"hello"-->true
+*/
+
+
