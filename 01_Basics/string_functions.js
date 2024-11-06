@@ -9,7 +9,7 @@ console.log(`The name is ${str}.`)
 //key-->index positions
 //value-->character at the position
 //0-based indexing is followed
-//length is also a method returning the total number of characters
+//length is also a property returning the total number of characters
 console.log(str[1])
 console.log(str.length)
 
