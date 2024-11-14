@@ -33,7 +33,7 @@ let object3=Object.assign(object1,object2)//object1 is modified
 console.log(object3)
 console.log(object1===object3)//returns true
 
-//use an empty object to prevent modification of tany of the source objects
+//use an empty object to prevent modification of any of the source objects
 let src1={1:"a",2:"b"}
 let src2={3:"c",4:"d"}
 
@@ -58,7 +58,7 @@ let igUser={
 const {age}=igUser
 console.log(age)
 
-const {yearJoined:yj}=igUser
+const {yearJoined:yj}=igUser//alias name
 console.log(yj)
 
 //layering or nesting in objects
