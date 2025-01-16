@@ -12,3 +12,5 @@ console.log(0==null)
 console.log(1===1)
 console.log(1==="1")//matches both data type and value-->offers strict checking of the values
 
+console.log(1>"1")
+console.log(null==NaN)
