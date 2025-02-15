@@ -22,7 +22,7 @@ user.printCurrent()
 console.log(this)//no referencing object;refers to an empty object in the node environment
 
 function coffee(){
-    console.log(this)//non-strict mode-->bins to the global object in node
+    console.log(this)//non-strict mode-->binds to the global object in node
 }
 coffee()//in strict mode-->prevents accidental golbal binding therfore returns undefined
 

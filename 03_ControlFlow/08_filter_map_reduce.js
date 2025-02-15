@@ -53,7 +53,7 @@ console.log(resChain)
 //reduce method
 const numberList=[1,2,3,4,5]
 const initialVal=0
-//accumulator-->preveious value
+//accumulator-->previous value
 //currentValue-->current item from the array
 const total=numberList.reduce((accumulator,currentValue)=>{
     console.log(`accumulator:${accumulator}   current_value:${currentValue}`)

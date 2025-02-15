@@ -4,7 +4,7 @@
 let mySym=Symbol("This is a JsUser.")
 
 //using object literals
-//pass the symbol name in curly braces for it to be treated as a symbol by the js-compiler
+//pass the symbol name in square brackets for it to be treated as a symbol by the js-compiler
 const JsUser={
     name:"Ashish",
     age:20,

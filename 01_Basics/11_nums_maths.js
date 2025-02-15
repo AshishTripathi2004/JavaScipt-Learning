@@ -14,7 +14,7 @@ console.log(score.toFixed(2))//upto 2 decimal places
 
 //using the precision function
 let exp=new Number(1243.94)
-console.log(exp.toPrecision(5))//rounds upto 3 significant digits
+console.log(exp.toPrecision(3))//rounds upto 5 significant digits
 
 //locale string
 let num=1232343
