@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element in DOM</title>
+</head>
+<body style="background-color: black; color:white">
+</body>
+<script>
+    let div=document.createElement('div')
+    div.className="first"
+    div.id="one"
+
+    //best way to set properties that have one attribute only
+    div.setAttribute("title","set title")
+
+    //best way to set style property which can have so many attributes
+    div.style.color='white'
+    div.style.backgroundColor='green'
+    div.style.padding='10px'
+    div.style.borderRadius='10px'
+    div.style.textAlign='center'
+    div.style.fontWeight='bold'
+
+    //create a text node
+    //append the text node at the desired position within the DOM tree
+    const txt_node=document.createTextNode("This is injected via script tag")
+    div.appendChild(txt_node)
+
+    document.body.appendChild(div)
+</script>
+</html>

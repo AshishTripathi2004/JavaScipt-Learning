@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Insertion</title>
+</head>
+<body style="background-color:#414141; color:whitesmoke">
+    <div class="parent">
+        <!--this is a comment-->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    //get the element with a particular class 
+    const getParent=document.querySelector(".parent")
+    console.log(getParent)
+    console.log(getParent.children)//returns an HTML Collection
+    console.log(getParent.children[0])
+
+    console.log(getParent.children[0].innerHTML)
+    for(let i=0;i<getParent.children.length;i++){
+        console.log(getParent.children[i].innerText)
+    }
+    
+    getParent.children[0].style.color="orange"
+    console.log(getParent.children[0].getAttribute("style"))
+    getParent.children[1].setAttribute("style","color:pink")
+    
+    console.log(getParent.firstElementChild)
+    console.log(getParent.firstChild)
+    console.log(getParent.lastElementChild)
+
+    const dayOne=document.querySelector(".day")
+    console.log(dayOne)
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling)
+
+    const list=getParent.childNodes
+    console.log(list)
+
+</script>
+</html>
